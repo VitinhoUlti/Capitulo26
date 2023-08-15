@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 15px black;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+section#login div#imagem{
+    display: block;
+    background: url(../imagens/pexels-vinícius-estevão-2896034\ \(1\).jpg);
+    background-size: cover;
+    background-position: right center;
+    height: 200px;
+}
+section#login div#formulario{
+    display: block;
+    padding: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+section#login{
+    width: 90vw;
+}
+section#login div#imagem{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-position: center left;
+}
+section#login div#formulario{
+    float: right;
+    width: 70%;
+}
+}
+@media screen and (min-width: 993px) and (max-width: 1400px){
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    section#login{
+        width: 90vw;
+    }
+    section#login div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position: center left;
+    }
+    section#login div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1401px){
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    section#login{
+        width: 90vw;
+    }
+    section#login div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position: center left;
+    }
+    section#login div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
